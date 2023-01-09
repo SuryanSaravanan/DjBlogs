@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} Done {% endblock %}
+
+{% block body %}
+<div class="container">
+    <h3>Welcome, {{new_user.username}}</h3>
+    <p> Your account has been registered successfully, you may <a href="{% url 'login'%}">Login Here</a></p>
+</div>
+{% endblock %}
